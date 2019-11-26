@@ -1,2 +1,2 @@
 # study-lambda
-学些lambda
+学习lambda
