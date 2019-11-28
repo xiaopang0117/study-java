@@ -1,2 +1,2 @@
-# study-lambda
-学习lambda
+# study-java
+学习java
