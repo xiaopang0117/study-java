@@ -2,7 +2,6 @@ package lambda;
 
 import java.util.function.Consumer;
 import java.util.function.IntPredicate;
-import java.util.function.Predicate;
 
 /**
  * 内置函数方法
@@ -16,9 +15,7 @@ public class FunctionDemo {
         System.out.println(predicate.test(-9));
 
         //消费函数接口
-        Consumer<String> consumer = s-> {
-            System.out.println(s);
-        };
+        Consumer<String> consumer = System.out::println;
         consumer.accept("输入的数据");
     }
 }

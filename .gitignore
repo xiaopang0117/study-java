@@ -21,23 +21,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-!/.idea/
-将删除 .idea/$PRODUCT_WORKSPACE_FILE$
-将删除 .idea/.gitignore
-将删除 .idea/compiler.xml
-将删除 .idea/gradle.xml
-将删除 .idea/libraries/
-将删除 .idea/misc.xml
-将删除 .idea/modules.xml
-将删除 .idea/modules/
-将删除 .idea/study-java.iml
-将删除 .idea/vcs.xml
-将删除 lambda/.gradle/
-将删除 lambda/build/generated/
-将删除 lambda/build/tmp/
-将删除 lambda/src/main/resources/
-将删除 lambda/src/test/
 /.idea/
 /lambda/.gradle/
-!/.gitignore
-!/.gitignore
+/.gradle/
