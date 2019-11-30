@@ -1,5 +1,6 @@
 package lambda;
 
+import javax.print.DocFlavor;
 import java.util.function.*;
 
 /**
@@ -12,6 +13,18 @@ class Dog {
      * 默认10斤食物
      */
     private int food = 10;
+
+    public Dog() {
+
+    }
+
+    /**
+     * 带参数的构造函数
+     * @param name
+     */
+    public Dog(String name){
+        this.name = name;
+    }
 
     /**
      * 狗叫
@@ -62,5 +75,13 @@ public class MethodReferenceDemo {
         //使用类名来方法引用
         BiFunction<Dog,Integer,Integer> function1 = Dog::eat;
         System.out.println("还剩下"+function1.apply(dog,2)+"斤");
+
+        //无参构造函数的方法引用
+        Supplier<Dog> supplier = Dog::new;
+        System.out.println("创建了新对象："+supplier.get());
+
+        //带参数的构造函数的方法引用
+        Function<String,Dog> function2 = Dog::new;
+        System.out.println("创建了新对象"+function2.apply("旺财"));
     }
 }
