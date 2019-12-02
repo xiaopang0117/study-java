@@ -9,7 +9,9 @@ interface IMath2 {
     int add(int x,int y);
 }
 
-
+/**
+ * 类型推断
+ */
 public class TypeDemo {
 
     public static void main(String[] args) {
