@@ -25,5 +25,24 @@ list接口 使用default
 ### 外部迭代
 ### 内部迭代
 #### 中间操作
+##### 无状态操作
+map/mapToXxx 
+flatMap/flatMapToXxx
+filter 过滤
+peek 
+unordered 
+##### 有状态操作
+distinct 去重
+sorted 排序
+limit 限流
+skip 跳过
 #### 终止操作
+##### 非短路操作
+forEach
+forEachOrdered
+collect/toArray
+reduce
+min/max/count
+##### 短路操作 （不需要等到流全部结束）
+
 #### 惰性求值
