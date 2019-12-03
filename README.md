@@ -44,5 +44,7 @@ collect/toArray
 reduce
 min/max/count
 ##### 短路操作 （不需要等到流全部结束）
+findFirst/findAny
+###并行流
 
 #### 惰性求值
